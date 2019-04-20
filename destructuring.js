@@ -70,8 +70,23 @@ function totalPopulation(obj) {
   Use object destructuring to save the property values to new variables. 
   Push these new variables to an array and return the array. 
 */
+someObj = {
+  carb: "pasta",
+  fat: " sugar",
+  protein: " meat"
+};
 
-//Code Here
+function ingredients(obj) {
+  
+  var newArr = [];
+  var {carb, fat, protein} = obj;
+  newArr.push(carb, fat, protein);
+  return newArr
+  
+}
+
+ingredients(someObj);
+
 
 
 
